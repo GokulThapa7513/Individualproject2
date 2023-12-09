@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programming Fundamentals for Apps</title>
+    <link href="programmingfundamentals.css" rel="stylesheet"> 
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="programming-fundamentals">
+        <div id="programming-fundamentals-content">
+            <h2>Programming Fundamentals for Apps</h2>
+            <p>Welcome to the Programming Fundamentals course! This section will cover essential programming concepts
+                for app development. Whether you're a beginner or have some coding experience, mastering these
+                fundamentals is crucial for building robust and efficient applications.</p>
+
+            <div class="lesson-content">
+                <h3>Lesson 1: Introduction to Programming</h3>
+                <p>In this introductory lesson, we'll explore the foundational concepts of programming. You'll gain
+                    insights into the importance of programming, basic syntax, and key terminology.</p>
+                <p>Key topics covered:</p>
+                <ul>
+                    <li><strong>Importance of Programming:</strong> Understand why programming is essential in the
+                        context of app development and how it powers applications.</li>
+                    <li><strong>Basic Syntax:</strong> Get acquainted with the fundamental syntax rules, including
+                        variables, data types, and statements.</li>
+                    <li><strong>Key Terminology:</strong> Learn essential programming terms such as variables,
+                        functions, and control structures.</li>
+                </ul>
+                <!-- Example Program for Lesson 1 -->
+                <p>Example Program:</p>
+                <pre>
+                    <code>
+                        // Hello World Program in JavaScript
+                        console.log("Hello, World!");
+                    </code>
+                </pre>
+                <!-- Code Editor for Practice -->
+                <div class="code-editor">
+                    <p>Practice Here:</p>
+                    <textarea id="lesson1-editor" rows="5" cols="50"></textarea>
+                    <button onclick="runCode('lesson1-editor', 'lesson1-output')">Run Code</button>
+                </div>
+                <!-- Output Display for Practice -->
+                <div class="code-output" id="lesson1-output"></div>
+            </div>
+
+            <div class="lesson-content">
+                <h3>Lesson 2: Variables and Data Types</h3>
+                <p>Dive into the world of variables and data types. Learn how to declare and use variables, and
+                    understand the importance of choosing the right data type for your app.</p>
+                <p>Key topics covered:</p>
+                <ul>
+                    <li><strong>Declaring and Initializing Variables:</strong> Explore the process of declaring and
+                        initializing variables to store and manage data.</li>
+                    <li><strong>Common Data Types:</strong> Understand various data types, including integers, floats,
+                        strings, and booleans.</li>
+                    <li><strong>Type Conversion and Coercion:</strong> Learn how to convert data between different types
+                        and handle type coercion.</li>
+                </ul>
+                <!-- Example Program for Lesson 2 -->
+                <p>Example Program:</p>
+                <pre>
+                    <code>
+                        // Variables and Data Types in Python
+                        name = "John"
+                        age = 25
+                        height = 5.9
+                        is_student = True
+
+                        print(name)
+                        print(age)
+                        print(height)
+                        print(is_student)
+                    </code>
+                </pre>
+                <!-- Code Editor for Practice -->
+                <div class="code-editor">
+                    <p>Practice Here:</p>
+                    <textarea id="lesson2-editor" rows="5" cols="50"></textarea>
+                    <button onclick="runCode('lesson2-editor', 'lesson2-output')">Run Code</button>
+                </div>
+                <!-- Output Display for Practice -->
+                <div class="code-output" id="lesson2-output"></div>
+            </div>
+
+            <div class="lesson-content">
+                <h3>Lesson 3: Control Flow and Loops</h3>
+                <p>Explore control flow statements and loops to control the flow of your programs. Learn how to make
+                    decisions and repeat tasks based on certain conditions.</p>
+                <p>Key topics covered:</p>
+                <ul>
+                    <li><strong>Conditional Statements:</strong> Master the use of if, else if, and else statements for
+                        decision-making in your code.</li>
+                    <li><strong>Switch Statements:</strong> Understand the switch statement for handling multiple
+                        branching options based on a variable's value.</li>
+                    <li><strong>Introduction to Loops:</strong> Learn about for, while, and do-while loops for efficient
+                        repetition in your code.</li>
+                </ul>
+                <!-- Example Program for Lesson 3 -->
+                <p>Example Program:</p>
+                <pre>
+                    <code>
+                        // Control Flow and Loops in Java
+                        int number = 10;
+
+                        if (number > 0) {
+                            System.out.println("The number is positive.");
+                        } else if (number < 0) {
+                            System.out.println("The number is negative.");
+                        } else {
+                            System.out.println("The number is zero.");
+                        }
+
+                        // Loop example
+                        for (int i = 0; i < 5; i++) {
+                            System.out.println("Iteration " + (i + 1));
+                        }
+                    </code>
+                </pre>
+                <!-- Code Editor for Practice -->
+                <div class="code-editor">
+                    <p>Practice Here:</p>
+                    <textarea id="lesson3-editor" rows="5" cols="50"></textarea>
+                    <button onclick="runCode('lesson3-editor', 'lesson3-output')">Run Code</button>
+                </div>
+                <!-- Output Display for Practice -->
+                <div class="code-output" id="lesson3-output"></div>
+            </div>
+
+            <div class="lesson-content">
+                <h3>Lesson 4: Functions and Modularization</h3>
+                <p>Understand the power of functions in programming. Learn how to create modular and reusable code by
+                    organizing it into functions.</p>
+                <p>Key topics covered:</p>
+                <ul>
+                    <li><strong>Defining and Invoking Functions:</strong> Explore the process of defining and invoking
+                        functions to perform specific tasks.</li>
+                    <li><strong>Passing Parameters and Returning Values:</strong> Learn how to pass information to
+                        functions through parameters and retrieve results using return values.</li>
+                    <li><strong>Organizing Code with Functions:</strong> Understand the importance of modularization and
+                        how functions contribute to well-organized and maintainable code.</li>
+                </ul>
+                <!-- Example Program for Lesson 4 -->
+                <p>Example Program:</p>
+                <pre>
+                    <code>
+                        // Functions and Modularization in C#
+                        class Program {
+                            static void Main() {
+                                // Function invocation
+                                GreetUser("Alice");
+
+                                // Function definition
+                                void GreetUser(string name) {
+                                    Console.WriteLine("Hello, " + name + "!");
+                                }
+                            }
+                        }
+                    </code>
+                </pre>
+                <!-- Code Editor for Practice -->
+                <div class="code-editor">
+                    <p>Practice Here:</p>
+                    <textarea id="lesson4-editor" rows="5" cols="50"></textarea>
+                    <button onclick="runCode('lesson4-editor', 'lesson4-output')">Run Code</button>
+                </div>
+                <!-- Output Display for Practice -->
+                <div class="code-output" id="lesson4-output"></div>
+            </div>
+
+            <p>By the end of this course, you'll have a solid understanding of programming fundamentals, setting the
+                stage for your journey into app development.</p>
+        </div>
+    </section>
+
+    <section id="next-section">
+        <h2>Ready for the Next Lesson?</h2>
+        <p>Continue your learning journey by exploring the next lesson in our app development course. Enroll now to
+            unlock more exciting content and interactive lessons.</p>
+        <button onclick="navigatelesson('Previous')">Previous</button>
+        <button onclick="navigatelesson('Next')">Next</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Interactive Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="programmingfundamentals.js"></script>
+</body>

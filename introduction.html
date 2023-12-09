@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 1: Introduction to Mobile App Development</title>
+    <link href="introduction.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="lesson1">
+        <div id="lesson1-content">
+            <h2>Introduction to Mobile App Development</h2>
+            <p>Welcome to the first lesson of our app development course! In this lesson, we will explore the
+                fundamental concepts and key aspects of mobile app development. Whether you are a beginner or have some
+                programming experience, this lesson will set the foundation for your exciting journey into the world of
+                mobile apps.</p>
+            <p>Key topics covered in this lesson:</p>
+            <ul>
+                <li>Overview of Mobile App Development</li>
+                <li>Introduction to Mobile Platforms</li>
+                <li>Understanding App Architecture</li>
+                <li>Common Development Tools</li>
+            </ul>
+            <p>By the end of this lesson, you will have a clear understanding of the importance of mobile app
+                development, the various platforms available, and the tools used by developers to create innovative and
+                user-friendly applications.</p>
+        </div>
+    </section>
+
+    <!-- Details for interactive elements -->
+    <section id="explore-tools">
+        <div id="explore-tools-content">
+            <h4>Explore App Development Tools</h4>
+            <p>Get hands-on with popular app development tools used by professionals:</p>
+            <ul>
+                <li><strong>Visual Studio Code:</strong> A lightweight but powerful source code editor.</li>
+                <li><strong>Android Studio:</strong> The official IDE for Android app development.</li>
+                <li><strong>Xcode:</strong> The integrated development environment for macOS app development.</li>
+                <li><strong>React Native:</strong> A framework for building native mobile apps using React and
+                    JavaScript.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="quiz">
+        <div id="quiz-content">
+            <h4>Quiz: Mobile App Basics</h4>
+            <p>Test your knowledge with the following quiz questions:</p>
+            <form id="quizForm">
+                <ol>
+                    <li>
+                        <p><strong>Question 1:</strong> What is the purpose of an integrated development environment
+                            (IDE) in app development?</p>
+                        <ul>
+                            <li><input type="radio" name="q1" value="a"> To write and edit source code</li>
+                            <li><input type="radio" name="q1" value="b"> To compile and debug code</li>
+                            <li><input type="radio" name="q1" value="c"> To design user interfaces</li>
+                            <li><input type="radio" name="q1" value="d"> All of the above</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Question 2:</strong> Which platform is Android Studio primarily used for?</p>
+                        <ul>
+                            <li><input type="radio" name="q2" value="a"> iOS</li>
+                            <li><input type="radio" name="q2" value="b"> Android</li>
+                            <li><input type="radio" name="q2" value="c"> Web development</li>
+                            <li><input type="radio" name="q2" value="d"> Windows applications</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p><strong>Question 3:</strong> What is the primary programming language used in React Native?
+                        </p>
+                        <ul>
+                            <li><input type="radio" name="q3" value="a"> Java</li>
+                            <li><input type="radio" name="q3" value="b"> Python</li>
+                            <li><input type="radio" name="q3" value="c"> JavaScript</li>
+                            <li><input type="radio" name="q3" value="d"> C++</li>
+                        </ul>
+                    </li>
+                </ol>
+            </form>
+            <p>Submit your answers and check your understanding!</p>
+            <button onclick="calculateScore()">Submit Answers</button>
+        </div>
+    </section>
+
+    <section id="next-section">
+        <h2>Ready for the Next Lesson?</h2>
+        <p>Continue your learning journey by exploring the next lesson in our app development course. Enroll now to
+            unlock more exciting content and interactive lessons.</p>
+        <button onclick="navigatelesson('Previous')">Previous</button>
+        <button onclick="navigatelesson('Next')">Next</button>
+
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Interactive Learning Platform. All rights reserved.</p>
+    </footer>
+    
+    <script src="introduction.js"></script>
+
+</body>
+
+</html>

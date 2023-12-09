@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Implementing App Security</title>
+    <link href="appsecurity.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="fundamentals">
+        <div class="lesson-content">
+            <h2>Lesson 1: Fundamentals of App Security</h2>
+            <p>Welcome to the foundational lesson on the Fundamentals of App Security. In this module, we will establish a solid understanding of the security landscape in mobile app development. Security is a multifaceted concern, and recognizing potential threats and vulnerabilities is the first step in building robust applications.</p>
+            <p>We will explore common security threats faced by mobile apps, such as data breaches, SQL injection, and cross-site scripting. Understanding these threats is crucial for developers to implement effective security measures. Additionally, we will delve into the concept of vulnerabilities and how they can be exploited by attackers. This knowledge will empower you to identify and address potential weaknesses in your app's security architecture.</p>
+            <p>Furthermore, we will introduce the CIA Triad—Confidentiality, Integrity, and Availability. This foundational concept in information security ensures that sensitive information remains confidential, data integrity is maintained, and services are consistently available. By grasping these fundamental principles, you'll be well-equipped to make informed decisions in securing your mobile applications.</p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li>Common Security Threats</li>
+                <li>Understanding Vulnerabilities</li>
+                <li>The CIA Triad in App Security</li>
+            </ul>
+
+            <div class="lesson-content">
+                <h3>Quiz for Lesson 1</h3>
+                <p>1. What is the CIA Triad in the context of app security?</p>
+                <input type="radio" name="q1" value="a"> a) Confidentiality, Integrity, Accessibility<br>
+                <input type="radio" name="q1" value="b"> b) Cybersecurity, Infrastructure, Authentication<br>
+                <input type="radio" name="q1" value="c"> c) Cryptography, Intrusion Detection, Authorization<br>
+                <button onclick="checkAnswer('q1', 'a', 'correct')">Submit Answer</button>
+                <p id="q1-result"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="authentication-authorization">
+        <div class="lesson-content">
+            <h2>Lesson 2: Authentication and Authorization</h2>
+            <p>In Lesson 2, we'll focus on the critical aspects of Authentication and Authorization in mobile app security. Authentication is the process of verifying the identity of users, ensuring that only legitimate users gain access to your application. We'll explore various mechanisms for secure user verification, including traditional password-based methods and more advanced techniques like biometric authentication.</p>
+            <p>Authorization, the process of granting appropriate permissions to authenticated users, is equally vital. We'll delve into access control mechanisms, understanding how to safeguard different sections of your application based on user roles. Role-based access control (RBAC) and attribute-based access control (ABAC) will be explored, providing you with the tools to implement granular access policies in your app.</p>
+            <p>To reinforce your learning, there will be a hands-on coding exercise where you'll implement a basic authentication system with password hashing and user authorization. This practical exercise will give you firsthand experience in implementing secure authentication mechanisms, a fundamental aspect of any secure mobile application.</p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li>Secure Password Management</li>
+                <li>Multi-Factor Authentication</li>
+                <li>Access Control and Authorization</li>
+            </ul>
+
+            <div class="lesson-content">
+                <h3>Quiz for Lesson 2</h3>
+                <p>1. What is the purpose of authentication in app security?</p>
+                <input type="radio" name="q2" value="a"> a) Ensuring data availability<br>
+                <input type="radio" name="q2" value="b"> b) Verifying user identity<br>
+                <input type="radio" name="q2" value="c"> c) Preventing network attacks<br>
+                <button onclick="checkAnswer('q2', 'b', 'correct')">Submit Answer</button>
+                <p id="q2-result"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="data-encryption">
+        <div class="lesson-content">
+            <h2>Lesson 3: Data Encryption</h2>
+            <p>Lesson 3 explores the critical topic of <strong>Data Encryption</strong> in mobile app security. Data encryption is a fundamental practice that ensures sensitive information remains confidential and secure. It involves the use of cryptographic algorithms to convert plaintext data into an unreadable format, making it indecipherable to unauthorized entities.</p>
+            <p>In this lesson, we delve into both <strong>symmetric and asymmetric encryption techniques</strong>. Symmetric encryption uses a single key for both encryption and decryption, while asymmetric encryption involves a pair of public and private keys. Understanding the strengths and use cases of each technique is essential for implementing robust security measures in your mobile applications.</p>
+            <p>End-to-End Encryption (E2EE) is a key focus, emphasizing the importance of securing data during communication between devices. Implementing E2EE ensures that even if intercepted, the data remains unreadable to third parties. We'll also cover best practices for data storage encryption, ensuring that sensitive user information stored in databases is well-protected.</p>
+            <p>By comprehending the intricacies of data encryption, you'll be equipped to protect user data during transmission and storage. A hands-on coding exercise challenges you to implement data encryption for sensitive user information stored in your app's database, providing practical experience in applying encryption principles.</p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li>Symmetric and Asymmetric Encryption</li>
+                <li>End-to-End Encryption</li>
+                <li>Best Practices for Data Storage Encryption</li>
+            </ul>
+
+                 <div class="lesson-content">
+                <h3>Quiz for Lesson 3</h3>
+                <p>1. What does E2EE stand for in the context of data encryption?</p>
+                <input type="radio" name="q3" value="a"> a) End-to-End Encryption<br>
+                <input type="radio" name="q3" value="b"> b) Encryption 2 Endpoints<br>
+                <input type="radio" name="q3" value="c"> c) Encryption-to-Encryption Encryption<br>
+                <button onclick="checkAnswer('q3', 'a', 'correct')">Submit Answer</button>
+                <p id="q3-result"></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="network-security">
+        <div class="lesson-content">
+            <h2>Lesson 4: Network Security</h2>
+            <p>Lesson 4 focuses on securing your app's communication channels in the online environment. <strong>Implementing HTTPS</strong> is a crucial aspect of network security, ensuring that data exchanged between the app and server is encrypted and protected from eavesdropping.</p>
+            <p>We'll explore best practices for designing a <strong>secure API</strong>, covering topics such as authentication mechanisms, rate limiting, and proper error handling. Understanding these principles is essential for building robust and secure APIs that interact seamlessly with your mobile application.</p>
+            <p>Protection against <strong>network-based attacks</strong> is a key concern. We'll discuss common attack vectors such as man-in-the-middle attacks and techniques to mitigate these risks. By the end of this lesson, you'll have a comprehensive understanding of how to secure your app's communication channels effectively.</p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li>Implementing HTTPS</li>
+                <li>Secure API Design</li>
+                <li>Protection Against Network-Based Attacks</li>
+            </ul>
+          <div class="lesson-content">
+                <h3>Quiz for Lesson 4</h3>
+                <p>1. What is the purpose of implementing HTTPS in network security?</p>
+                <input type="radio" name="q4" value="a"> a) Ensuring data confidentiality<br>
+                <input type="radio" name="q4" value="b"> b) Enhancing user interface<br>
+                <input type="radio" name="q4" value="c"> c) Preventing code obfuscation<br>
+                <button onclick="checkAnswer('q4', 'a', 'correct')">Submit Answer</button>
+                <p id="q4-result"></p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="code-obfuscation">
+        <div class="lesson-content">
+            <h2>Lesson 5: Code Obfuscation and Anti-Tampering</h2>
+            <p>Lesson 5 focuses on protecting your app's source code from reverse engineering and unauthorized modifications. <strong>Code Obfuscation Techniques</strong> involve transforming the code to make it more challenging to understand, preventing attackers from easily decompiling or analyzing it.</p>
+            <p>We'll explore <strong>anti-tampering measures</strong> to detect and prevent unauthorized modifications to your app. Understanding how to protect against reverse engineering is vital for safeguarding intellectual property and maintaining the integrity of your application.</p>
+            <p>By the end of this lesson, you'll have a comprehensive understanding of code obfuscation, anti-tampering measures, and how to protect your app against malicious attacks that attempt to manipulate or decompile your code.</p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li>Code Obfuscation Techniques</li>
+                <li>Anti-Tampering Measures</li>
+                <li>Protecting Against Reverse Engineering</li>
+            </ul>
+            <div class="lesson-content">
+                <h3>Quiz for Lesson 5</h3>
+                <p>1. What is the purpose of code obfuscation in app security?</p>
+                <input type="radio" name="q5" value="a"> a) Enhancing code readability<br>
+                <input type="radio" name="q5" value="b"> b) Protecting against reverse engineering<br>
+                <input type="radio" name="q5" value="c"> c) Accelerating code execution<br>
+                <button onclick="checkAnswer('q5', 'b', 'correct')">Submit Answer</button>
+                <p id="q5-result"></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="continuous-monitoring">
+        <div class="lesson-content">
+            <h2>Lesson 6: Continuous Security Monitoring</h2>
+            <p>Security is an ongoing process, and Lesson 6 emphasizes the importance of <strong>Continuous Security Monitoring</strong> in the app development lifecycle. We'll explore tools and practices for detecting and responding to security incidents, ensuring that your app remains resilient against evolving threats.</p>
+            <p><strong>Security Audits and Penetration Testing</strong> are essential components of continuous monitoring. We'll discuss the significance of conducting regular audits and penetration tests to identify vulnerabilities and weaknesses in your app's security architecture. Staying informed about the latest security threats is crucial, and we'll explore strategies to keep abreast of emerging trends.</p>
+            <p>In the hands-on coding exercise for this lesson, you'll implement a continuous security monitoring system for your app using a security tool of your choice. This practical experience will enhance your skills in proactively securing your mobile applications.</p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li>Continuous Security Monitoring</li>
+                <li>Security Audits and Penetration Testing</li>
+                <li>Staying Informed About Security Threats</li>
+            </ul>
+            <div class="lesson-content">
+                <h3>Quiz for Lesson 6</h3>
+                <p>1. What is the significance of continuous security monitoring?</p>
+                <input type="radio" name="q6" value="a"> a) Identifying security incidents<br>
+                <input type="radio" name="q6" value="b"> b) Enhancing user experience<br>
+                <input type="radio" name="q6" value="c"> c) Optimizing code performance<br>
+                <button onclick="checkAnswer('q6', 'a', 'correct')">Submit Answer</button>
+                <p id="q6-result"></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Next Steps -->
+    <section id="next-steps">
+        <div class="lesson-content">
+            <h2>Next Steps</h2>
+            <p>Congratulations on completing the "Implementing App Security" course! To further enhance your skills, consider exploring advanced topics such as threat modeling, secure coding practices, and cloud security. Stay informed about emerging security trends and continue applying best practices to secure your mobile applications.</p>
+            <button onclick="navigatelesson('Previous')">Previous</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Interactive Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="appsecurity.js"></script>
+</body>
+
+</html>

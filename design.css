@@ -1,0 +1,160 @@
+body {
+font-family: 'Arial', sans-serif;
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+nav {
+display: flex;
+justify-content: center;
+background-color: #2980b9;
+padding: 10px;
+}
+
+nav a {
+color: #fff;
+text-decoration: none;
+margin: 0 15px;
+font-weight: bold;
+font-size: 16px;
+}
+
+nav a:hover {
+text-decoration: underline;
+}
+
+section {
+padding: 50px;
+text-align: center;
+}
+#next-section {
+  margin-bottom: 5em;
+}
+#uiux-design-content {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#uiux-design h2 {
+  color: #3498db;
+}
+
+#uiux-design ul {
+  list-style-position: inside;
+}
+
+
+#design-tools-content,
+#design-principles-content,
+#design-project-content {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+#design-tools ul,
+#design-principles ul {
+  list-style-type: none;
+  line-height: 1.6;
+}
+
+#design-project-content button {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+#design-project-content button:hover {
+  background-color: #27ae60;
+}
+
+
+#uiux-design-content {
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#uiux-design ul {
+  list-style-position: inside;
+}
+.topic-content {
+margin-top: 20px;
+text-align: left;
+padding: 20px;
+}
+.topic-content ul {
+line-height: 1.8;
+}
+
+h2, h3 {
+color: #3498db;
+}
+
+p {
+line-height: 1.6;
+}
+
+ul {
+list-style-position: inside;
+}
+
+button {
+background-color: #2ecc71;
+color: #fff;
+padding: 10px 20px;
+border-radius: 5px;
+border: none;
+margin-top: 30px;
+cursor: pointer;
+}
+
+button:hover {
+background-color: #27ae60;
+}
+
+footer {
+background-color: #333;
+color: #fff;
+text-align: center;
+padding: 10px;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+width: 100%;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav a {
+        margin: 10px 0;
+    }
+
+    section {
+        padding: 10px; 
+    }
+    #next-section button {
+        margin-bottom: 2em;
+
+    }
+}

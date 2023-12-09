@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Building a Database for Apps</title>
+    <link href="database.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="homepage.html">Home</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="building-database">
+        <div class="lesson-content">
+            <h3>Introduction to Databases</h3>
+            <p>Databases are the cornerstone of modern applications, providing a systematic and organized way to store,
+                manage, and retrieve data. In this foundational lesson, we embark on an exploration of the fundamental
+                concepts that underpin databases. We start by understanding the crucial role databases play in software
+                development and explore the diverse landscape of database types. From traditional Relational Databases,
+                characterized by structured tables and relationships, to NoSQL databases offering flexibility and
+                scalability, and Graph Databases designed for managing interconnected data. As we delve into the
+                intricacies of databases, we lay the groundwork for our journey into SQL, the language that enables
+                seamless interaction with these data storage systems.</p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li><strong>Understanding the Role of Databases:</strong> Databases serve as repositories for structured
+                    data, providing a central hub for applications to efficiently store and retrieve information.</li>
+                <li><strong>Exploring Types of Databases:</strong> We examine various types of databases, including
+                    Relational Databases, NoSQL Databases, and Graph Databases, each tailored to specific application
+                    needs.</li>
+                <li><strong>Introduction to SQL:</strong> SQL (Structured Query Language) is introduced as the standard
+                    language for interacting with relational databases, allowing developers to perform tasks such as
+                    querying, updating, and managing data.</li>
+                <li><strong>Creating a Simple Table:</strong> Practical application of our newfound SQL knowledge begins
+                    as we learn how to create a basic table to store user information.</li>
+            </ul>
+            <!-- Try It Yourself -->
+            <div class="lesson-content try-it-yourself">
+                <h4>Try It Yourself</h4>
+                <div class="code-editor">
+                    <p>Write a SQL query to create a simple table for storing user information.</p>
+                    <pre><code id="lesson1-editor">CREATE TABLE users (
+  id INT PRIMARY KEY,
+  username VARCHAR(50),
+  email VARCHAR(50)
+);</code></pre>
+                    <button onclick="runCodeLesson1()">Run Code</button>
+                </div>
+                <div class="code-output" id="lesson1-output"></div>
+            </div>
+        </div>
+
+        <div class="lesson-content">
+            <h3>Relational Database Design</h3>
+            <p>Building upon our understanding of databases, we transition to the intricate art of designing relational
+                databases. The focus is on the principles that govern the efficient organization of data. We explore
+                normalization, a critical process that minimizes data redundancy and dependency, ensuring the integrity
+                of the database. Visualizing these relationships becomes paramount, leading us to Entity-Relationship
+                Diagrams (ERD), which serve as powerful tools for designing the connections between different entities.
+                As a practical application, we design tables for a library system, applying the principles of relational
+                database design to create a well-structured and efficient schema.</p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li><strong>Principles of Relational Databases:</strong> We delve into the core principles that guide
+                    the design of relational databases, emphasizing the importance of well-organized data.</li>
+                <li><strong>Normalization for Data Integrity:</strong> Normalization is introduced as a key process to
+                    ensure data integrity by minimizing redundancy and dependency within the database.</li>
+                <li><strong>Visualizing Relationships with ERD:</strong> Entity-Relationship Diagrams become our visual
+                    aid for understanding and representing the relationships between different entities in the database.
+                </li>
+                <li><strong>Designing Tables for a Library System:</strong> Application of relational database design
+                    principles takes shape as we create tables for a library system, demonstrating how to structure data
+                    effectively.</li>
+            </ul>
+            <!-- Try It Yourself -->
+            <div class="lesson-content try-it-yourself">
+                <h4>Try It Yourself</h4>
+                <div class="code-editor">
+                    <p>Design a database schema for a library system with tables for books, authors, and borrowers.</p>
+                    <pre><code id="lesson2-editor">CREATE TABLE books (
+  book_id INT PRIMARY KEY,
+  title VARCHAR(100),
+  author_id INT,
+  publication_year INT
+);
+
+CREATE TABLE authors (
+  author_id INT PRIMARY KEY,
+  author_name VARCHAR(50)
+);
+
+CREATE TABLE borrowers (
+  borrower_id INT PRIMARY KEY,
+  borrower_name VARCHAR(50),
+  book_id INT
+);</code></pre>
+                    <button onclick="runCodeLesson2()">Run Code</button>
+                </div>
+                <div class="code-output" id="lesson2-output"></div>
+            </div>
+        </div>
+
+        <div class="lesson-content">
+            <h3>SQL and Database Queries</h3>
+            <p>With a well-designed relational database in place, we pivot to the powerful realm of SQL queries. This
+                lesson introduces fundamental SQL commands, covering basic queries, filtering and sorting data, and
+                performing joins to retrieve valuable information from multiple tables. We delve into practical
+                examples, illustrating the versatility of SQL in extracting meaningful insights from complex datasets.
+                Whether you're retrieving user information or analyzing library data, mastering SQL queries is crucial
+                for effective database interaction.</p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li><strong>Essential SQL Commands:</strong> We cover the fundamental SQL commands, including SELECT,
+                    INSERT, UPDATE, and DELETE, providing the building blocks for effective interaction with databases.
+                </li>
+                <li><strong>Filtering and Sorting Data:</strong> Understanding how to filter and sort data using WHERE
+                    and ORDER BY clauses is essential for extracting specific information from the database.</li>
+                <li><strong>Performing Joins in SQL:</strong> Join operations are explained, allowing us to combine data
+                    from multiple tables to retrieve comprehensive information.</li>
+                <li><strong>Practical Query Examples:</strong> Practical examples showcase the application of SQL
+                    queries in real-world scenarios, demonstrating the versatility and power of this language.</li>
+            </ul>
+            <!-- Try It Yourself -->
+            <div class="lesson-content try-it-yourself">
+                <h4>Try It Yourself</h4>
+                <div class="code-editor">
+                    <p>Write a SQL query to retrieve the names of all books published after 2020.</p>
+                    <pre><code id="lesson3-editor">SELECT title FROM books WHERE publication_year > 2020;</code></pre>
+                    <button onclick="runCodeLesson3()">Run Code</button>
+                </div>
+                <div class="code-output" id="lesson3-output"></div>
+            </div>
+        </div>
+
+        <div class="lesson-content">
+            <h3>Building a Sample Database</h3>
+            <p>In our final lesson, we put theory into practice by constructing a sample database for a blog system. We
+                explore the intricacies of creating tables, establishing relationships, and addressing security
+                considerations. Best practices in database design are highlighted to ensure scalability, efficiency, and
+                data integrity. By the end of this course, you'll not only have the technical skills to design databases
+                but also the knowledge to make informed decisions that contribute to the success of your applications.
+            </p>
+            <p><strong>Key Topics:</strong></p>
+            <ul>
+                <li><strong>Creating Tables for a Blog System:</strong> We embark on the practical application of our
+                    knowledge by creating tables for a blog system, emphasizing the importance of a well-structured
+                    database for real-world applications.</li>
+                <li><strong>Establishing Relationships Between Entities:</strong> Relationships between entities are
+                    explored, demonstrating how to connect tables in a meaningful way to represent the dynamics of a
+                    blog system.</li>
+                <li><strong>Security Considerations in Database Design:</strong> We address critical security
+                    considerations in database design, focusing on safeguarding data and protecting against potential
+                    vulnerabilities.</li>
+                <li><strong>Best Practices for Database Efficiency:</strong> Best practices are outlined, covering
+                    aspects such as indexing, optimization, and efficient query design to enhance the overall
+                    performance of the database.</li>
+            </ul>
+            <!-- Try It Yourself -->
+            <div class="lesson-content try-it-yourself">
+                <h4>Try It Yourself</h4>
+                <div class="code-editor">
+                    <p>Create tables for a blog system with relationships between users, posts, and comments</p>
+                    <pre><code id="lesson4-editor">CREATE TABLE users (
+  user_id INT PRIMARY KEY,
+  username VARCHAR(50),
+  email VARCHAR(50),
+  password VARCHAR(50)
+);
+
+CREATE TABLE posts (
+  post_id INT PRIMARY KEY,
+  user_id INT,
+  title VARCHAR(100),
+  content TEXT,
+  created_at TIMESTAMP
+);
+
+CREATE TABLE comments (
+  comment_id INT PRIMARY KEY,
+  user_id INT,
+  post_id INT,
+  comment_text TEXT,
+  created_at TIMESTAMP
+);</code></pre>
+                    <button onclick="runCodeLesson4()">Run Code</button>
+                </div>
+                <div class="code-output" id="lesson4-output"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section id="next-section">
+        <h2>Ready for the Next Lesson?</h2>
+        <p>Continue your learning journey by exploring the next lesson in our app development course. Enroll now to
+            unlock more exciting content and interactive lessons.</p>
+        <button onclick="navigatelesson('Previous')">Previous</button>
+        <button onclick="navigatelesson('Next')">Next</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Interactive Learning Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="database.js"></script>
+</body>
+
+</html>
