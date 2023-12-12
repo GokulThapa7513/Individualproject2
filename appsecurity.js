@@ -1,7 +1,7 @@
   function checkAnswer(question, correctOption) {
-            var selectedOption = document.querySelector('input[name="' + question + '"]:checked');
+            let selectedOption = document.querySelector('input[name="' + question + '"]:checked');
             if (selectedOption) {
-                var userAnswer = selectedOption.value;
+                let userAnswer = selectedOption.value;
                 if (userAnswer === correctOption) {
                     document.getElementById(question + '-result').innerHTML = 'The answer is correct!';
                 } else {
