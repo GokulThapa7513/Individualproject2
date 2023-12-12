@@ -80,7 +80,7 @@ button {
     margin-top: 20px;
     cursor: pointer;
 }
-.button:hover {
+button:hover {
     background-color: #27ae60;
 }
 
