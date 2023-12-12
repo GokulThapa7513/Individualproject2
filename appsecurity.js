@@ -11,3 +11,8 @@
                 document.getElementById(question + '-result').innerHTML = 'Please select an answer.';
             }
         }
+  function navigatelesson (direction) {
+      if (direction === 'Previous') {
+          window.location.href = 'database.html';
+    }
+}
