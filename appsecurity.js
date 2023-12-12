@@ -1,21 +1,13 @@
-function navigatelesson (direction) {
-  if (direction === 'introduction') {
-      window.location.href = 'introduction.html';
-}
-
-else if (direction === 'introduction') {
-      window.location.href = 'design.html';
-}
-
-else if (direction === 'introduction') {
-      window.location.href = 'programmingfundamentals.html';
-}
-
-else if (direction === 'introduction') {
-      window.location.href = 'database.html';
-}
-
-else if (direction === 'introduction') {
-      window.location.href = 'appsecurity.html';
-}
-}
+  function checkAnswer(question, correctOption) {
+            var selectedOption = document.querySelector('input[name="' + question + '"]:checked');
+            if (selectedOption) {
+                var userAnswer = selectedOption.value;
+                if (userAnswer === correctOption) {
+                    document.getElementById(question + '-result').innerHTML = 'The answer is correct!';
+                } else {
+                    document.getElementById(question + '-result').innerHTML = 'Incorrect. The correct answer is: ' + correctOption;
+                }
+            } else {
+                document.getElementById(question + '-result').innerHTML = 'Please select an answer.';
+            }
+        }
